@@ -7,9 +7,14 @@
     <title>Halaman Tambah Mahasiswa</title>
     <style>
         /* Internal CSS untuk mempercantik form */
+        h2 {
+            text-align: center;
+            color: hwb(180 4% 95%);
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-color: hsl(201, 76%, 46%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,15 +22,15 @@
         }
 
         .form-container {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: hwb(210 96% 3%);
+            padding: 40px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             width: 300px;
         }
 
         h3 {
-            text-align: center;
+            text-align: left;
             color: #4CAF50;
         }
 
@@ -53,21 +58,21 @@
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: hwb(217 4% 8%);
         }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h3>Tambah Mahasiswa</h3>
+        <h2>Tambah Mahasiswa</h2>
         <form>
-            <label for="nama">Nama:</label>
+            <label for="nama">Nama</label>
             <input type="text" id="nama" name="nama" required>
 
-            <label for="nim">NIM:</label>
+            <label for="nim">NIM</label>
             <input type="text" id="nim" name="nim" required>
 
-            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <label for="jenis_kelamin">Jenis Kelamin</label>
             <select id="jenis_kelamin" name="jenis_kelamin" required>
                 <option value="Laki-Laki">Laki-Laki</option>
                 <option value="Perempuan">Perempuan</option>
